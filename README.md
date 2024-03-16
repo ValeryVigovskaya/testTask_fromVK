@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+<h1> Проект: имитация корзины товаров </h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ Главная цель проекта - реализация примера корзины товаров.
 
-## Available Scripts
+# Реализованный функционал:
+<ul>
+  <li>Получение списка товаров по запросу API</li>
+  <li>Вывод на экран только трех элементов</li>
+  <li>Увеличение количества товара</li>
+  <li>Уменьшение количества товара</li>
+  <li>Изменение суммы за товар, с учетом увеличения количества</li>
+  <li>Удаление карточки товара</li>
+  <li>Изменение суммы за товар, с учетом удаления карточки</li>
+  <li>Подсчет общей стоимости за все товары в корзине</li>
+  <li>Изменение общей стоимости, с учетом увеличения количества</li>
+  <li>Изменение общей стоимости, с учетом удаления карточки</li>
+</ul>
 
-In the project directory, you can run:
+# Используемые технологии:
+Основные используемые фреймворки - React и Redux.
 
-### `npm start`
+1. установлена заготовка CRA, установлены зависимости npm.
+2. в проекте установлена библиотека UI-компонентов от VKUI
+3. оформлена организация файловой структуры, все компоненты лежат в отдельной директории и у каждого компонента имеется своя директория со своими стилями.
+4. API запрос GET на получение товаров
+5. проект типизирован на TypeScript
+6. подключена библиотека Redux
+7. Создан экшен и редьюсер на получение товаров и изменение общей стоимости, работа счетчика количества товаров, изменение стоимости, удаление карточки
+8. в папке utils, лежат функции на подсчет общей стоимости и и форматирование стоимости до двух знаков после запятой.
+9. хранилище Redux тоже типизировано
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Инструкция по запуску:
+Чтобы запустить проект локально понадобится несколько шагов:
+1. Зайти в место, где будет запускаться проект: 
+   `cd <название папки>`
+2. Создать папку:
+   `mkdir <название папки>`
+3. Войти в папку:
+   `cd <название папки>`
+4. Клонируем репозиторий:
+   `git clone https://github.com/ValeryVigovskaya/testTask_fromVK.git`
+5. Заходим в появившуюся папку:
+   `cd testTask_fromVK`
+6. Устанавливаем все зависимости:
+   `npm i или npm install`
+7. Собрать проект можно по команде:
+   `npm run build`
+9. Запустить проект на локальном хосте можно по команде:
+    `npm run start`
 
-### `npm test`
+Чтобы запустить проект в облаке понадобится несколько шагов:
+1.  https://codesandbox.io/p/github/ValeryVigovskaya/testTask_fromVK/main?import=true
+2.  дождаться, пока установятся зависимости и проект запустится
+ ---
+  :hammer_and_wrench: Используется :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ <div>
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/>&nbsp;
+  <img src="https://img.shields.io/badge/redux%20-%23593d88.svg?&style=for-the-badge&logo=redux&logoColor=white"/>&nbsp;
+  <img src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"/>&nbsp;
+  <img src="https://img.shields.io/badge/typescript%20-%23007ACC.svg?&style=for-the-badge&logo=typescript&logoColor=white"/>&nbsp;
