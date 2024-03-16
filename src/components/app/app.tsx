@@ -23,29 +23,31 @@ export const App = () => {
   }, [dispatch]);
 
   return (
-    <AppRoot>
-      <SplitLayout
-        header={
-          platform !== "vkcom" && <PanelHeader delimiter="none"></PanelHeader>
-        }
-      >
-        <PanelHeader>Проект подготовила Халитова Валерия</PanelHeader>
-        <div className="content-container">
-          <View activePanel="bascket">
-            <Panel id="bascket">
-              <PanelHeader></PanelHeader>
-              <Items />
-            </Panel>
-          </View>
+        <AppRoot>
+          <SplitLayout
+            header={
+              platform !== "vkcom" && (
+                <PanelHeader delimiter="none"></PanelHeader>
+              )
+            }
+          >
+            <PanelHeader>Проект подготовила Халитова Валерия</PanelHeader>
+            <div className="content-container">
+              <View activePanel="bascket">
+                <Panel id="bascket">
+                  <PanelHeader></PanelHeader>
+                  <Items />
+                </Panel>
+              </View>
 
-          <View activePanel="totalSum">
-            <Panel id="totalSum">
-              <PanelHeader></PanelHeader>
-              <Total />
-            </Panel>
-          </View>
-        </div>
-      </SplitLayout>
-    </AppRoot>
+              <View activePanel="totalSum">
+                <Panel id="totalSum">
+                  <PanelHeader></PanelHeader>
+                  <Total />
+                </Panel>
+              </View>
+            </div>
+          </SplitLayout>
+        </AppRoot>
   );
 };

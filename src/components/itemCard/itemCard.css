@@ -25,6 +25,7 @@
 
 .price {
   font-size: 20px;
+  white-space: nowrap;
   min-height: 30px;
   text-align: center;
   padding-top: 10px;
@@ -33,3 +34,21 @@
   border-radius: var(--vkui--size_border_radius--regular);
   color: var(--vkui--color_background_content);
 }
+
+@media screen and (max-width: 1051px) {
+  .cardImg {
+    max-width: 70%;
+  }
+  .price {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 857px) {
+    .cardImg {
+      max-width: 60%;
+    }
+    .price {
+      font-size: 10px;
+    }
+  }
