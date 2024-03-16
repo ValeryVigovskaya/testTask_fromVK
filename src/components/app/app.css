@@ -1,0 +1,6 @@
+.content-container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    gap: 10px;
+}

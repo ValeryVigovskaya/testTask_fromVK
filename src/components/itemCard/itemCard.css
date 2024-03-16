@@ -1,0 +1,35 @@
+.cardImg {
+  max-width: 80%;
+  justify-self: flex-end;
+  border-radius: 0;
+  margin: 10px;
+}
+
+.counter {
+  align-self: center;
+  font-size: 30px;
+}
+
+.container__buscket-sum {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  height: 100%;
+  align-items: center;
+}
+
+.delete-button {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+.price {
+  font-size: 20px;
+  min-height: 30px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 600;
+  background-color: #7bb5f2;
+  border-radius: var(--vkui--size_border_radius--regular);
+  color: var(--vkui--color_background_content);
+}

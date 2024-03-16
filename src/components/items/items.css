@@ -1,0 +1,17 @@
+.group_items {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #cdcdcd;
+}
+
+.title {
+  color: var(--vkui--color_background_content);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  align-items: center;
+}

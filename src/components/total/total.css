@@ -1,0 +1,10 @@
+.total__container {
+    max-width: 100%;
+    background-color: #cdcdcd;
+    min-height: 50%;
+}
+
+.caption {
+    font-size: 20px;
+    font-weight: 600;
+}
